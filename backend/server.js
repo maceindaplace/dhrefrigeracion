@@ -6,7 +6,7 @@ const fs = require('fs');
 const db = require('./config/db');  // Importar el pool de conexiones
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 65002;
 
 // Configurar para servir archivos estáticos desde la carpeta 'uploads'
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
